@@ -3,5 +3,17 @@
     margin-right: auto;
     padding-left: 15px;
     padding-right: 15px;
-    width: 1200px;
+    // width: 1200px;
+
+    @media screen and (min-width: $mobile) {
+        width: $mobile;
+    }
+
+    @media screen and (min-width: $tablet) {
+        width: $tablet;
+    }
+
+    @media screen and (min-width: $desktop) {
+        width: $desktop;
+    }
 }
