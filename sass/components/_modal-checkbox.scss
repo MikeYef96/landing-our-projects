@@ -1,0 +1,42 @@
+.form-checkbox {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.form-acception__label {
+    display: inline-block;
+    width: 100%;
+    margin-top: 20px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 1.714;
+    color: $text-color;
+
+    &::before {
+        content: "";
+        display: inline-block;
+        border: 2px solid black;
+        border-radius: 2px;
+        fill: white;
+        width: 16px;
+        height: 15px;
+        background-repeat: no-repeat;
+        background-position: center;
+
+        .form-checkbox:checked+& {
+            background-color: $background-button;
+            background-image: url(../img/svg/icon-check.svg);
+            border: none;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+    }
+}
+
+.form-condition {
+    text-decoration-line: underline;
+    color: $background-button;
+}

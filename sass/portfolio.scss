@@ -1,0 +1,22 @@
+//UTILS
+@import "./utils/visualy-hidden";
+@import "./utils/variables";
+
+//BASE
+@import "./base/common";
+@import "./base/container";
+
+//COMPONENTS
+@import "./components/backdrop";
+@import "./components/modal-btn";
+@import "./components/modal-form-input";
+@import "./components/modal-form-content";
+@import "./components/modal-checkbox";
+@import "./components/submit-btn";
+
+
+//LAYOUT
+@import "./layout/header";
+@import "./layout/portfolio-filters";
+@import "./layout/portfolio-projects";
+@import "./layout/footer";

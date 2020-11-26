@@ -1,0 +1,27 @@
+.modal-title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 1.15;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: $title-color;
+}
+
+.js-speaker-form__container {
+    display: flex;
+    flex-direction: column;
+    max-width: 448px;
+}
+
+.modal-form__label {
+    display: inline-flex;
+    margin-top: 10px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 1.166;
+    color: $text-color;
+}
