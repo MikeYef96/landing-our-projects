@@ -17,6 +17,12 @@
   margin: 0;
 }
 
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
 h1,
 h2,
 h3,
@@ -57,27 +63,27 @@ body {
 }
 
 .container {
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding: 0 15px;
 }
 
 @media screen and (min-width: 480px) {
   .container {
-    width: 480px;
+    max-width: 480px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .container {
-    width: 768px;
+    max-width: 768px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .container {
-    width: 1200px;
+    max-width: 1200px;
   }
 }
 
@@ -307,10 +313,27 @@ body {
   align-items: center;
   margin-right: auto;
   margin-left: auto;
-  max-width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
+  width: 100%;
+  padding: 0 15px;
   height: 80px;
+}
+
+@media screen and (min-width: 480px) {
+  .header-container {
+    max-width: 480px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .header-container {
+    max-width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header-container {
+    max-width: 1200px;
+  }
 }
 
 .nav-container {
