@@ -43,3 +43,9 @@
 
     color: #FFFFFF;
 }
+
+@media screen and (max-width: 1199px) {
+    .portfolio {
+        display: none;
+    }
+}

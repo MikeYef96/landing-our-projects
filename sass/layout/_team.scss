@@ -1,13 +1,7 @@
 .team {
+    padding: 60px 0;
     letter-spacing: 0.03em;
     background-color: $bg-portfolio-filter;
-    padding-top: 94px;
-    padding-bottom: 94px;
-}
-
-.team-list {
-    display: flex;
-    justify-content: center;
 }
 
 .team-list {
@@ -24,10 +18,6 @@
         box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.4);
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
         transition-duration: 250ms;
-    }
-
-    & .item+.item {
-        margin-left: 30px;
     }
 }
 
@@ -86,5 +76,52 @@
     .social-list__link:hover &,
     .social-list__link:focus & {
         fill: #FFFFFF;
+    }
+}
+
+@media screen and (min-width: 480px) {
+    .team-list .item {
+        width: 450px;
+        margin-bottom: 30px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+
+    .team_list {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .team-list .item {
+        width: 354px;
+        margin-right: 30px;
+    }
+
+    .team-list .item:nth-child(2n) {
+        margin-right: 0;
+    }
+
+}
+
+@media screen and (min-width: 1200px) {
+    .team {
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
+
+    .team-list {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+    }
+
+    .team-list .item {
+        max-width: 270px;
+        margin-right: 0;
+    }
+
+    .team-list .item+.item {
+        margin-left: 30px;
     }
 }

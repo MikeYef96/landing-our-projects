@@ -55,10 +55,12 @@
     <main>
         <!--HERO BLOCK==========================================================-->
         <section class="hero">
-            <h1 class="hero-title">
-                Эффективные решения <br>для вашего бизнеса
-            </h1>
-            <button type="submit" class="hero-button" data-modal-open>Заказать услугу</button>
+            <div class="container hero-container">
+                <h1 class="hero-title">
+                    Эффективные решения <br>для вашего бизнеса
+                </h1>
+                <button type="submit" class="hero-button" data-modal-open>Заказать услугу</button>
+            </div>
         </section>
 
         <!--BENEFITS=============================================================-->
@@ -119,7 +121,11 @@
             <div class="container portfolio-container">
                 <ul class="portfolio-list">
                     <li class="item">
-                        <img src="./img/portfolio-img1.jpg" alt="Портфолио">
+                        <picture>
+                            <source srcset="./img/portfolio-img1.jpg 1x, ./img/portfolio-img1@2x.jpg 2x"
+                                media="(min-width: 1200px)">
+                            <img src="./img/portfolio-img1.jpg" alt="Портфолио">
+                        </picture>
                         <div class="portfolio-list__container">
                             <p class="portfolio-list__info">
                                 Десктопные приложения
@@ -127,7 +133,11 @@
                         </div>
                     </li>
                     <li class="item">
-                        <img src="./img/portfolio-img2.jpg" alt="Портфолио">
+                        <picture>
+                            <source srcset="./img/portfolio-img2.jpg 1x, ./img/portfolio-img2@2x.jpg 2x"
+                                media="(min-width: 1200px)">
+                            <img src="./img/portfolio-img2.jpg" alt="Портфолио">
+                        </picture>
                         <div class="portfolio-list__container">
                             <p class="portfolio-list__info">
                                 Мобильные приложения
@@ -135,7 +145,11 @@
                         </div>
                     </li>
                     <li class="item">
-                        <img src="./img/portfolio-img3.jpg" alt="Портфолио">
+                        <picture>
+                            <source srcset="./img/portfolio-img3.jpg 1x, ./img/portfolio-img3@2x.jpg 2x"
+                                media="(min-width: 1200px)">
+                            <img src="./img/portfolio-img3.jpg" alt="Портфолио">
+                        </picture>
                         <div class="portfolio-list__container">
                             <p class="portfolio-list__info">
                                 Дизайнерские решения
@@ -152,7 +166,15 @@
             <div class="container">
                 <ul class="team-list">
                     <li class="item">
-                        <img src="./img/team-img1.jpg" alt="Игорь Демьяненко" width="270" height="260">
+                        <picture class="team-list-pic">
+                            <source srcset="./img/team-img1.jpg 1x, ./img/team-img1@2x.jpg 2x"
+                                media="(min-width: 1200px)">
+                            <source srcset="./img/tablet/team-img1.jpg 1x, ./img/tablet/team-img1@2x.jpg 2x"
+                                media="(min-width: 768px)">
+                            <source srcset="./img/mobile/team-img1.jpg 1x, ./img/mobile/team-img1@2x.jpg 2x"
+                                media="(min-width: 480px)" class="team-list-pic__mobile">
+                            <img src="./img/team-img1.jpg" alt="Игорь Демьяненко">
+                        </picture>
                         <h3 class="team-list_name">Игорь Демьяненко</h3>
                         <p lang="en" class="team-list_pos">
                             Product Designer
@@ -189,7 +211,15 @@
                         </ul>
                     </li>
                     <li class="item">
-                        <img src="./img/team-img2.jpg" alt="Ольга Репина" width="270" height="260">
+                        <picture class="team-list-pic">
+                            <source srcset="./img/team-img2.jpg 1x, ./img/team-img2@2x.jpg 2x"
+                                media="(min-width: 1200px)">
+                            <source srcset="./img/tablet/team-img2.jpg 1x, ./img/tablet/team-img2@2x.jpg 2x"
+                                media="(min-width: 768px)">
+                            <source srcset="./img/mobile/team-img2.jpg 1x, ./img/mobile/team-img2@2x.jpg 2x"
+                                media="(min-width: 480px)" class="team-list-pic__mobile">
+                            <img src="./img/team-img2.jpg" alt="Ольга Репина">
+                        </picture>
                         <h3 class="team-list_name">Ольга Репина</h3>
                         <p lang="en" class="team-list_pos">
                             Frontend Developer
@@ -226,7 +256,15 @@
                         </ul>
                     </li>
                     <li class="item">
-                        <img src="./img/team-img3.jpg" alt="Николай Тарасов" width="270" height="260">
+                        <picture class="team-list-pic">
+                            <source srcset="./img/team-img3.jpg 1x, ./img/team-img3@2x.jpg 2x"
+                                media="(min-width: 1200px)">
+                            <source srcset="./img/tablet/team-img3.jpg 1x, ./img/tablet/team-img3@2x.jpg 2x"
+                                media="(min-width: 768px)">
+                            <source srcset="./img/mobile/team-img3.jpg 1x, ./img/mobile/team-img3@2x.jpg 2x"
+                                media="(min-width: 480px)">
+                            <img src="./img/team-img3.jpg" alt="Николай Тарасов">
+                        </picture>
                         <h3 class="team-list_name">Николай Тарасов</h3>
                         <p lang="en" class="team-list_pos">
                             Marketing
@@ -263,7 +301,15 @@
                         </ul>
                     </li>
                     <li class="item">
-                        <img src="./img/team-img4.jpg" alt="Михаил Ермаков" width="270" height="260">
+                        <picture class="team-list-pic">
+                            <source srcset="./img/team-img4.jpg 1x, ./img/team-img4@2x.jpg 2x"
+                                media="(min-width: 1200px)">
+                            <source srcset="./img/tablet/team-img4.jpg 1x, ./img/tablet/team-img4@2x.jpg 2x"
+                                media="(min-width: 768px)">
+                            <source srcset="./img/mobile/team-img4.jpg 1x, ./img/mobile/team-img4@2x.jpg 2x"
+                                media="(min-width: 480px)" class="team-list-pic__mobile">
+                            <img src="./img/team-img4.jpg" alt="Михаил Ермаков">
+                        </picture>
                         <h3 class="team-list_name">Михаил Ермаков</h3>
                         <p lang="en" class="team-list_pos">
                             UI Designer
