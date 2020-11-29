@@ -88,7 +88,12 @@
 
 @media screen and (min-width: 768px) {
 
-    .team_list {
+    .team-container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .team-list {
         display: flex;
         flex-wrap: wrap;
     }

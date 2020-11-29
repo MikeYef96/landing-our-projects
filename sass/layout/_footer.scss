@@ -172,3 +172,74 @@
 //     fill: #FFFFFF;
 //     margin-left: 10px;
 // }
+
+// @media screen and (min-width: 480px) {
+
+//     .contacts-container {
+//         display: flex;
+//         flex-direction: column;
+//         align-items: center;
+//     }
+
+//     .container-footer {
+//         align-items: center;
+//     }
+
+//     .title-webstudio {
+//         max-width: 154px;
+//     }
+
+//     .links-container {
+//         display: flex;
+//         align-items: center;
+//         margin: 60px 0;
+//     }
+
+//     .subscribe-container {
+//         display: flex;
+//         flex-direction: column;
+//         align-items: center;
+
+//         height: 156px;
+//     }
+
+//     .subscribe-form__email {
+//         display: flex;
+//         width: calc(100% - 30px);
+//         margin: 20px 0;
+//     }
+
+//     .subscribe-form__button {
+//         display: flex;
+//         max-width: 200px;
+//     }
+// }
+
+// @media screen and (min-width: 768px) {}
+
+// @media screen and (min-width: 1200px) {
+
+//     .contacts-container {
+//         justify-content: space-between;
+//     }
+
+//     .subscribe-container {
+//         max-width: 570px;
+//         height: 86px;
+//         margin-left: 93px;
+//     }
+
+//     .subscribe-form {
+//         display: inline-flex;
+//     }
+
+//     .subscribe-form__email {
+//         width: 358px;
+//         margin-right: 12px;
+//         padding-left: 10px;
+//     }
+
+//     .subscribe-form__button {
+//         display: inline-flex;
+//     }
+// }
