@@ -20,50 +20,50 @@
                 <a href="index.html" class="title-webstudio">
                     <span class="title-web">Web</span><span class="title-studio">Studio</span>
                 </a>
-
-                <!-- <ul class="header-list list">
-                    <li class="item"><a href="index.html" class="header-link studio-link">Студия</a></li>
-                    <li class="item"><a href="portfolio.html" class="header-link header-link__border">Портфолио</a></li>
-                    <li class="item"><a href="" class="header-link header-link__border">Контакты</a></li>
-                </ul> -->
             </nav>
             <button type="button" class="menu-button" aria-expanded="false" aria-controls="menu-container"
                 data-menu-button aria-expanded="true">
-                <svg width="40" height="40" aria-label="Переключатель мобильного меню">
+                <svg class="menu-button__icon" width="40" height="40" aria-label="Переключатель мобильного меню">
                     <use class="icon-menu" href="./img/mobile-menu-sprite.svg#icon-menu"></use>
                     <use class="icon-cross" href="./img/mobile-menu-sprite.svg#icon-close"></use>
                 </svg>
             </button>
 
             <div class="menu-container" id="menu-container" data-menu>
-                Контент меню
+                <ul class="header-list list">
+                    <li class="item"><a href="index.html" class="header-link studio-link">Студия</a></li>
+                    <li class="item"><a href="portfolio.html" class="header-link header-link__border">Портфолио</a></li>
+                    <li class="item"><a href="" class="header-link header-link__border">Контакты</a></li>
+                </ul>
+
+                <!--CONTACTS-->
+                <ul class="contacts-list list">
+                    <li class="item">
+                        <div class="contacts-link">
+                            <a href="mailto:info@devstudio.com" class="emeil-mobile">
+                                <svg class="email-icon" width="16" height="12">
+                                    <use href="./img/symbol-defs.svg#icon-envelope"></use>
+                                </svg>
+                                info@devstudio.com</a>
+                        </div>
+                    </li>
+                    <li class="item">
+                        <div class="contacts-link">
+                            <a href="tel:+380961111111" class="emeil-mobile"><svg class="mobile-icon" width="10"
+                                    height="16">
+                                    <use href="./img/symbol-defs.svg#icon-smartphone"></use>
+                                </svg>+38 096 111 11 11</a>
+                        </div>
+                    </li>
+                </ul>
             </div>
-            <!--CONTACTS-->
-            <!-- <ul class="contacts-list list">
-                <li class="item">
-                    <div class="contacts-link">
-                        <a href="mailto:info@devstudio.com" class="emeil-mobile">
-                            <svg class="email-icon" width="16" height="12">
-                                <use href="./img/symbol-defs.svg#icon-envelope"></use>
-                            </svg>
-                            info@devstudio.com</a>
-                    </div>
-                </li>
-                <li class="item">
-                    <div class="contacts-link">
-                        <a href="tel:+380961111111" class="emeil-mobile"><svg class="mobile-icon" width="10"
-                                height="16">
-                                <use href="./img/symbol-defs.svg#icon-smartphone"></use>
-                            </svg>+38 096 111 11 11</a>
-                    </div>
-                </li>
-            </ul> -->
+
         </div>
     </header>
 
 
     <!--MAIN-->
-    <main>
+    <main class="modal-open">
         <!--HERO BLOCK==========================================================-->
         <section class="hero">
             <div class="container hero-container">

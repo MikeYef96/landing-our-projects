@@ -34,6 +34,10 @@ body {
     font-family: Roboto, sans-serif;
 }
 
+body.modal-open {
+    overflow: hidden;
+}
+
 .main-section__title {
     font-style: normal;
     font-weight: bold;
