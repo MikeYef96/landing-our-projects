@@ -401,6 +401,8 @@ body.modal-open {
 
 .menu-container {
   text-align: center;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
 }
 
 @media screen and (max-width: 767px) {
@@ -411,8 +413,7 @@ body.modal-open {
     left: 0;
     width: 100%;
     height: 453px;
-    background: #FFFFFF;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
+    z-index: 999;
   }
   .menu-container.is-open {
     display: block;
@@ -509,12 +510,14 @@ body.modal-open {
   color: #2196F3;
 }
 
-.studio-link {
+.studio-link,
+.portfolio-link {
   color: #2196F3;
 }
 
 @media screen and (min-width: 480px) {
-  .studio-link::after {
+  .studio-link::after,
+  .portfolio-link::after {
     content: '';
     display: block;
     position: absolute;
@@ -527,7 +530,8 @@ body.modal-open {
 }
 
 @media screen and (min-width: 768px) {
-  .studio-link::after {
+  .studio-link::after,
+  .portfolio-link::after {
     content: '';
     display: block;
     position: absolute;
@@ -608,6 +612,7 @@ body.modal-open {
   }
   .contacts-list .item + .item {
     margin-left: 50px;
+    margin-top: 0;
   }
 }
 
