@@ -21,7 +21,7 @@
         min-width: 320px;
         background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4),
                 rgba(47, 48, 58, 0.4)),
-            url(../../img/mobile/hero-bg.jpg);
+            url(../img/mobile/hero-bg.jpg);
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
@@ -33,7 +33,7 @@
             content: '';
             background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4),
                     rgba(47, 48, 58, 0.4)),
-                url(../../img/mobile/hero-bg@2x.jpg);
+                url(../img/mobile/hero-bg@2x.jpg);
             background-color: $background-hero-footer;
         }
     }
@@ -47,7 +47,7 @@
         min-width: 720px;
         background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4),
                 rgba(47, 48, 58, 0.4)),
-            url(../../img/tablet/hero-bg.jpg);
+            url(../img/tablet/hero-bg.jpg);
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
@@ -59,7 +59,7 @@
             content: '';
             background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4),
                     rgba(47, 48, 58, 0.4)),
-                url(../../img/tablet/hero-bg@2x.jpg);
+                url(../img/tablet/hero-bg@2x.jpg);
             background-color: $background-hero-footer;
         }
     }
@@ -72,7 +72,7 @@
         // max-width: 1600px;
         background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4),
                 rgba(47, 48, 58, 0.4)),
-            url(../../img/hero-img.jpg);
+            url(../img/hero-img.jpg);
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
@@ -89,7 +89,7 @@
             content: '';
             background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4),
                     rgba(47, 48, 58, 0.4)),
-                url(../../img/hero-img@2x.jpg);
+                url(../img/hero-img@2x.jpg);
             background-color: $background-hero-footer;
         }
     }
