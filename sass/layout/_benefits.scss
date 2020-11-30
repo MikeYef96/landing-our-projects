@@ -39,15 +39,13 @@
     color: $text-color;
 }
 
-@media screen and (min-width: 480px) {
-    .benefits-bg {
-        max-width: 450px;
-    }
+.benefits-bg {
+    max-width: 100%;
+}
 
-    .benefits-section_info {
-        max-width: 450px;
-        margin-bottom: 30px;
-    }
+.benefits-section_info {
+    max-width: 100%;
+    margin-bottom: 30px;
 }
 
 

@@ -1,18 +1,13 @@
 .header-container {
     position: relative;
     display: flex;
+    justify-content: space-between;
     align-items: center;
     margin-right: auto;
     margin-left: auto;
-    width: 100%;
+    max-width: 100%;
+    height: 60px;
     padding: 0 15px;
-
-    @media screen and (min-width: 480px) {
-        justify-content: space-between;
-
-        max-width: 480px;
-        height: 60px;
-    }
 
     @media screen and (min-width: 768px) {
         max-width: 768px;
@@ -40,13 +35,8 @@
     display: none;
 }
 
-.menu-button .icon-menu {
-    fill: #000000;
-}
-
 .menu-button.is-open .icon-cross {
     display: block;
-    fill: #000000;
 }
 
 .menu-button.is-open .icon-menu {
@@ -61,13 +51,12 @@
     }
 }
 
+.icon-menu {
+    fill: #000000;
+}
+
 .menu-container {
     text-align: center;
-
-    background: #FFFFFF;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04),
-        0px 2px 4px rgba(0, 0, 0, 0.08),
-        0px 1px 3px rgba(0, 0, 0, 0.16);
 
     @media screen and (max-width: 767px) {
         display: none;
@@ -77,6 +66,11 @@
 
         width: 100%;
         height: 453px;
+
+        background: #FFFFFF;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04),
+            0px 2px 4px rgba(0, 0, 0, 0.08),
+            0px 1px 3px rgba(0, 0, 0, 0.16);
 
         z-index: 999;
 
@@ -121,7 +115,7 @@
 
 .header-list {
 
-    @media screen and (min-width: 480px) and (max-width:767px) {
+    @media screen and (min-width: 320px) and (max-width:767px) {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -146,7 +140,7 @@
 //     WE GIVE MARGIN TO ALL - LI ELEMENTS, EXCEPT LAST
 //     margin-right: 50px;}*/
 
-@media screen and (min-width: 480px) and (max-width:767px) {
+@media screen and (min-width: 320px) and (max-width:767px) {
     .header-list .item+.item {
         margin-top: 40px;
     }
@@ -180,21 +174,20 @@
 
 .studio-link,
 .portfolio-link {
-    color: $background-button;
+    &::after {
+        content: '';
+        display: block;
 
-    @media screen and (min-width: 480px) {
-        &::after {
-            content: '';
-            display: block;
+        position: absolute;
+        left: 0;
+        bottom: -8px;
+        width: 100%;
+        border-bottom: 4px solid $background-button;
+        border-radius: 2px;
 
-            position: absolute;
-            left: 0;
-            bottom: -8px;
-            width: 100%;
-            border-bottom: 4px solid $background-button;
-            border-radius: 2px;
-        }
+        color: $background-button;
     }
+
 
     @media screen and (min-width:768px) {
         &::after {
@@ -227,22 +220,20 @@
 
 .header-link__border {
 
-    @media screen and (min-width: 480px) {
-        &::after {
-            content: '';
-            display: block;
+    &::after {
+        content: '';
+        display: block;
 
-            position: absolute;
-            left: 0;
-            bottom: -8px;
-            width: 100%;
-            height: 4px;
+        position: absolute;
+        left: 0;
+        bottom: -8px;
+        width: 100%;
+        height: 4px;
 
-            background: $background-button;
-            border-radius: 2px;
+        background: $background-button;
+        border-radius: 2px;
 
-            transform: scaleX(0);
-        }
+        transform: scaleX(0);
     }
 
     @media screen and (min-width:768px) {
@@ -279,14 +270,12 @@
 /*CONTACTS START=============================================*/
 .contacts-list {
 
-    @media screen and (min-width: 480px) {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
-        & .item+.item {
-            margin-top: 16px;
-        }
+    & .item+.item {
+        margin-top: 16px;
     }
 
     @media screen and (min-width: 768px) {
