@@ -144,7 +144,7 @@
     }
 
     @media screen and (min-width: 1200px) {
-        margin-left: 70px;
+        margin-left: auto;
     }
 
 
@@ -212,7 +212,7 @@
         justify-content: space-between;
         max-width: 570px;
         height: 86px;
-        margin-left: 93px;
+
     }
 
     & .subscribe-container__title {
@@ -243,6 +243,7 @@
         display: inline-flex;
         flex-direction: row;
         align-items: center;
+        width: 570px;
     }
 }
 
