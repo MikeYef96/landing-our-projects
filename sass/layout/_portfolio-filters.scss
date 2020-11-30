@@ -22,24 +22,15 @@
 .filters-list {
     margin-bottom: 40px;
 
-    @media screen and (min-width:480px) and (max-width: 767px) {
+    @media screen and (min-width:320px) and (max-width: 767px) {
         display: flex;
         flex-wrap: wrap;
         justify-content: flex-start;
 
-        max-width: 362px;
-
         & .item {
             align-items: center;
             margin-bottom: 15px;
-        }
-
-        & .item+.item {
-            margin-left: 8px;
-        }
-
-        & .item:nth-child(4n) {
-            margin-left: 0;
+            margin-right: 8px;
         }
     }
 
