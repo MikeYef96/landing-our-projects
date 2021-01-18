@@ -356,6 +356,10 @@ body.modal-open {
   }
 }
 
+.header-list.header-tablet {
+  display: none;
+}
+
 .menu-button {
   display: inline-flex;
   margin: 0;
